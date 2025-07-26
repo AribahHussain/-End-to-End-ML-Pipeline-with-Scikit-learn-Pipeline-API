@@ -1,0 +1,75 @@
+ 📑 Project Report
+📝 Project Report: End-to-End ML Pipeline for Customer Churn Prediction
+🎯 Objective
+To build a modular and reusable ML pipeline for predicting customer churn using the Telco Churn Dataset, following best practices for real-world deployment.
+
+📁 Dataset: Telco Churn
+Contains customer demographics, service subscriptions, and churn label
+
+Goal: Predict whether a customer is likely to churn
+
+⚙️ Tools and Libraries
+Scikit-learn: Model training, pipelines, tuning
+
+Pandas: Data analysis
+
+Joblib: Model serialization
+
+🛠️ Key Components
+1. Data Preprocessing (with Pipeline)
+Handled using ColumnTransformer and Pipeline
+
+Steps included:
+
+Label Encoding / OneHotEncoding for categorical features
+
+StandardScaler for numerical features
+
+Missing value imputation (if needed)
+
+2. Model Training
+Models included:
+
+Logistic Regression for baseline
+
+Random Forest for ensemble learning
+
+Used Pipeline to combine preprocessing and model into a single object
+
+3. Hyperparameter Tuning
+Employed GridSearchCV for:
+
+Logistic Regression (C, regularization)
+
+Random Forest (n_estimators, max_depth)
+
+Cross-validated model selection ensured better generalization
+
+4. Evaluation Metrics
+Accuracy
+
+Precision, Recall, F1-score
+
+Confusion matrix
+
+5. Model Export
+Exported the entire pipeline (preprocessing + model) using joblib
+📈 Skills Gained
+🔁 Reusable Pipeline Design
+
+🔍 Feature Engineering & Encoding
+
+📊 Model Evaluation & Cross-Validation
+
+🛠️ Hyperparameter Optimization with GridSearch
+
+📦 Model Deployment Readiness (via joblib)
+
+✅ Conclusion
+This project demonstrates how to build an end-to-end machine learning workflow using Scikit-learn that is clean, reproducible, and ready for deployment. It ensures:
+
+Cleaner code structure
+
+Less error-prone feature processing
+
+Easier model reuse in real-world scenarios
